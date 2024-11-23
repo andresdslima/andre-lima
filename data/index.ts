@@ -1,4 +1,4 @@
-import { NavItem } from "@/components/ui/FloatingNavbar";
+import { NavItem } from "../components/ui/FloatingNavbar";
 
 export const navItems: NavItem[] = [
   { name: "Home", link: "#home" },
