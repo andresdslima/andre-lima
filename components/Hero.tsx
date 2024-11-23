@@ -8,7 +8,7 @@ import "./Hero.scss"
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36" id="home">
       {/**
        *  UI: Spotlights
        *  Link: https://ui.aceternity.com/components/spotlight
@@ -48,7 +48,11 @@ const Hero = () => {
           </a>
 
           <div className="image-container">
-            <a href="https://bit.ly/andrelimadev" target="_blank">
+            <a
+              href="https://bit.ly/andrelimadev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image src={myPhoto} alt="Andre Lima" width={100} height={100} />
             </a>
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
