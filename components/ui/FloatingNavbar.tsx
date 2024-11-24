@@ -1,5 +1,4 @@
 "use client";
-
 import { ReactNode, useEffect, useState } from "react";
 import {
   motion,
@@ -10,6 +9,7 @@ import {
 import Link from "next/link";
 import { cn } from "../../lib/utils";
 import { FaHome } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 export interface NavItem {
   name: string;
@@ -26,16 +26,16 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
-  // const activeLink = "border-b-purple";
-  // const url = window ? window.location.href : '';
-  // const [active, setActive] = useState<string>(url);
+  const activeLink = "border-b-purple";
+  const url = window.location.href;
+  const [active, setActive] = useState<string>(url);
 
-  // useEffect(() => {
-  //   const sectionName = url.split("#").pop();
-  //   if (sectionName) {
-  //     setActive(`#${sectionName}`);
-  //   }
-  // }, [url]);
+  useEffect(() => {
+    const sectionName = url.split("#").pop();
+    if (sectionName) {
+      setActive(`#${sectionName}`);
+    }
+  }, [url]);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
@@ -83,9 +83,8 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              `relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:border-b-purple border-transparent border-2 transition-all duration-200
-              `
-              // ${active === navItem.link && idx !== 0 ? activeLink : ""}`
+              `relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500 hover:border-b-purple border-transparent border-2 transition-all duration-300
+              ${active === navItem.link && idx !== 0 ? activeLink : ""}`
             )}
           >
             {idx === 0 ? (

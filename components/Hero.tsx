@@ -40,7 +40,7 @@ const Hero = () => {
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            */}
-          <a href="/" className="text-generate-effect">
+          <a href="/andre-lima/" className="text-generate-effect">
             <TextGenerateEffect
               words="Transforming Concepts into Seamless User Experiences"
               className="text-center text-[40px] md:text-5xl lg:text-6xl"

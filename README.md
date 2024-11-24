@@ -59,20 +59,20 @@ Make sure you have the following installed on your machine:
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [yarn](https://classic.yarnpkg.com/en/docs/getting-started)
 
 **Installation**
 
-Install the project dependencies using npm:
+Install the project dependencies using yarn:
 
 ```bash
-npm install
+yarn install
 ```
 
 **Running the Project**
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
