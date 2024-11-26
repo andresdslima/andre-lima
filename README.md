@@ -15,7 +15,7 @@
 
 https://github.com/user-attachments/assets/9c7d83ea-6ee4-4241-9d85-50722c0f0644
 
-<a href="https://mega.nz/file/jgBVlQYR#VPng2cQmrDfHCdDSyc29iNnCn4KNT8Smya0FgwoDQ28">Mobile version</a>
+<a href="https://mega.nz/file/jgBVlQYR#VPng2cQmrDfHCdDSyc29iNnCn4KNT8Smya0FgwoDQ28" rel="noopener noreferrer" target="_blank">Mobile version</a>
 
 ## 📋 <a name="table">Table of Contents </a>
 
