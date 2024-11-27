@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { cn } from "../../lib/utils";
 import React, { useEffect, useState } from "react";
 
@@ -15,6 +16,7 @@ export const InfiniteMovingCards = ({
     name: string;
     title: string;
     img: any;
+    link: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -104,13 +106,19 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               />
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal text-justify">
+              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal !text-justify">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <div className="me-3">
-                  <img src={item.img} alt={item.name} width={50} height={50} />
-                </div>
+                <Link
+                  href={item.link}
+                  className="me-3 hover:border-purple border-transparent border-4 hover:opacity-75 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ borderRadius: "100%" }}
+                >
+                  <img src={item.img} alt={item.name} width={75} height={75} />
+                </Link>
                 <span className="flex flex-col gap-1">
                   <span className="text-xl font-bold leading-[1.6] text-white">
                     {item.name}

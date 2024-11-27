@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../../lib/utils";
+import Link from "next/link";
 
 export const PinContainer = ({
   children,
@@ -12,7 +13,7 @@ export const PinContainer = ({
 }: {
   children: React.ReactNode;
   title?: string;
-  href?: string;
+  href: string;
   className?: string;
   containerClassName?: string;
 }) => {
@@ -36,7 +37,7 @@ export const PinContainer = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <a href={href} target="_blank" rel="noopener noreferrer">
+      <Link href={href} target="_blank" rel="noopener noreferrer">
         <div
           style={{
             perspective: "1000px",
@@ -53,7 +54,7 @@ export const PinContainer = ({
             <div className={cn(" relative z-50 ", className)}>{children}</div>
           </div>
         </div>
-      </a>
+      </Link>
       <PinPerspective title={title} href={href} />
     </div>
   );
@@ -64,13 +65,13 @@ export const PinPerspective = ({
   href,
 }: {
   title?: string;
-  href?: string;
+  href: string;
 }) => {
   return (
     <motion.div className="pointer-events-none w-full h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-[60] transition duration-500">
       <div className=" w-full h-full -mt-7 flex-none  inset-0">
         <div className="absolute top-0 inset-x-0  flex justify-center">
-          <a
+          <Link
             href={href}
             target={"_blank"}
             rel="noopener noreferrer"
@@ -81,7 +82,7 @@ export const PinPerspective = ({
             </span>
 
             <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover/btn:opacity-40"></span>
-          </a>
+          </Link>
         </div>
 
         <div

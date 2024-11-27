@@ -3,13 +3,14 @@
 import React from "react";
 import { companies, testimonials } from "../data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import Link from "next/link";
 
 const Clients = () => {
   return (
     <section id="testimonials" className="py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        Kind words from previous
+        <span className="text-purple"> colleagues</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
@@ -23,14 +24,19 @@ const Clients = () => {
 
         <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
           {companies.map(({ id, link, name, img }) => (
-            <a href={link} key={id} target="_blank" rel="noopener noreferrer">
+            <Link
+              href={link}
+              key={id}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="flex md:max-w-60 max-w-32 gap-2 justify-center items-center hover:scale-110 transition-all duration-300 hover:border-b-purple border-transparent border-2 pb-2">
                 <img src={img} alt={name} className="md:w-10 w-5" />
                 <span className="text-white text-bold md:w-24 w-20">
                   {name}
                 </span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

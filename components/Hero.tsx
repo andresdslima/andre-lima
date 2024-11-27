@@ -1,9 +1,10 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLaptopCode } from "react-icons/fa";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import Image from "next/image";
 import myPhoto from "../public/me.png";
+import Link from "next/link";
 import "./Hero.scss"
 
 const Hero = () => {
@@ -40,7 +41,8 @@ const Hero = () => {
           {/**
            *  Link: https://ui.aceternity.com/components/text-generate-effect
            */}
-          <a href="/andre-lima/" className="text-generate-effect">
+          {/* <a href="/andre-lima/" className="text-generate-effect"> */}
+          <a href="/" className="text-generate-effect">
             <TextGenerateEffect
               words="Transforming Concepts into Seamless User Experiences"
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
@@ -48,25 +50,31 @@ const Hero = () => {
           </a>
 
           <div className="image-container">
-            <a
+            <Link
               href="https://bit.ly/andrelimadev"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src={myPhoto} alt="Andre Lima" width={100} height={100} />
-            </a>
+              <img
+                src={myPhoto.src}
+                alt="Andre Lima"
+                width={100}
+                height={100}
+              />
+              {/* <Image src={myPhoto} alt="Andre Lima" width={100} height={100} /> */}
+            </Link>
             <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
               Hi! I&apos;m Andre Lima, a Fullstack Developer based in Portugal.
             </p>
           </div>
 
-          <a href="#about">
+          <Link href="#about">
             <MagicButton
-              title="Show my work"
-              icon={<FaLocationArrow />}
+              title="See my work"
+              icon={<FaLaptopCode />}
               position="right"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>

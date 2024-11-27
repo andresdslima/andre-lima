@@ -14,21 +14,9 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
+          des="We'll collaborate to map out your web/mobile app's goals, target audience, 
           and key functionalities. We'll discuss things like site structure, 
           navigation, and content requirements."
-        >
-          <CanvasRevealEffect
-            animationSpeed={ANIMATION_SPEED}
-            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
-          />
-        </Card>
-        <Card
-          title="Development & Testing"
-          icon={<AceternityIcon order="Phase 2" />}
-          des={`Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way. DPS (Develop, Preview, Ship)`}
         >
           <CanvasRevealEffect
             animationSpeed={ANIMATION_SPEED}
@@ -40,11 +28,23 @@ const Approach = () => {
           />
         </Card>
         <Card
+          title="Development & Testing"
+          icon={<AceternityIcon order="Phase 2" />}
+          des={`Once we agree on the plan, I will dive into
+          coding. From initial sketches to polished code, I keep you updated
+          every step of the way, always following the principles of DPS (Develop, Preview, Ship). All features will be tested and optimized accordingly to ensure the best User Experience.`}
+        >
+          <CanvasRevealEffect
+            animationSpeed={ANIMATION_SPEED}
+            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
+          />
+        </Card>
+        <Card
           title="Preview & Deploy"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="This is where the magic happens! Based on your approval, 
+          I will prepare everything to be shipped to Production, but first we will have a look at your web/mobile app
+          in a Preview environment and make all necessary User Tests."
         >
           <CanvasRevealEffect
             animationSpeed={ANIMATION_SPEED}
@@ -117,8 +117,8 @@ const Card = ({
         </h2>
         <p
           className="text-sm opacity-0 group-hover/canvas-card:opacity-100
-         relative z-10 mt-4 group-hover/canvas-card:text-white text-justify
-         group-hover/canvas-card:-translate-y-2 transition duration-200"
+         relative z-10 mt-4 group-hover/canvas-card:text-white 
+         group-hover/canvas-card:-translate-y-2 transition duration-200 !text-justify"
           style={{ color: "#E4ECFF" }}
         >
           {des}

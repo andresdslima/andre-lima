@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 import { cn } from "../../lib/utils";
 import { FaHome } from "react-icons/fa";
-import { usePathname } from "next/navigation";
+import { usePathname } from "next/navigation"; // Another option to style Navbar items according to current path
 
 export interface NavItem {
   name: string;
@@ -27,7 +27,7 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
   const activeLink = "border-b-purple";
-  const url = window.location.href;
+  const url = window?.location.href;
   const [active, setActive] = useState<string>(url);
 
   useEffect(() => {
@@ -40,7 +40,6 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
-
       if (scrollYProgress.get() < 0.05) {
         setVisible(true);
       } else {

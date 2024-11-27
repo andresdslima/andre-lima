@@ -3,6 +3,8 @@ import { workExperience } from "../data";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
+  const isMobile = window?.innerWidth <= 450;
+
   return (
     <div className="py-20 w-full">
       <h1 className="heading">
@@ -25,7 +27,10 @@ const Experience = () => {
             }}
             className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+            <div
+              className={`flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2 
+                ${card.id === 2 && !isMobile ? "pt-0 -mt-10" : ""}`}
+            >
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}

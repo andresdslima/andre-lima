@@ -10,7 +10,7 @@ const RecentProjects = () => {
       <h1 className="heading">
         A small selection of{" "}
         <span id="projects" className="text-purple">
-          recent projects
+          my projects
         </span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
@@ -27,7 +27,7 @@ const RecentProjects = () => {
                 >
                   <img src={bg.src} alt="Background Image" />
                 </div>
-                <img src={img} alt="cover" className="z-10 absolute bottom-0" />
+                <img src={img} alt="cover" className="z-10 absolute bottom-8 rotate-12 w-[85%]" />
               </div>
 
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -35,7 +35,7 @@ const RecentProjects = () => {
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 text-justify"
+                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2 !text-justify"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",

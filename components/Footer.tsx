@@ -1,6 +1,7 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { MdMarkEmailRead } from "react-icons/md";
 import { footerButtons } from "../data";
 import MagicButton from "./MagicButton";
+import Link from "next/link";
 
 const Footer = () => {
   const getSize = (link: string): number => {
@@ -18,13 +19,13 @@ const Footer = () => {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
         </p>
-        <a href="mailto:andresdslima@gmail.com">
+        <Link href="mailto:andresdslima@gmail.com">
           <MagicButton
             title="Let's get in touch"
-            icon={<FaLocationArrow />}
+            icon={<MdMarkEmailRead />}
             position="right"
           />
-        </a>
+        </Link>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-center items-center">
         <div className="flex items-center md:gap-3 gap-6">
@@ -33,7 +34,7 @@ const Footer = () => {
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <a
+              <Link
                 href={info.link}
                 target={info.link.includes("/") ? "_blank" : ""}
                 rel="noopener noreferrer"
@@ -44,7 +45,7 @@ const Footer = () => {
                   width={getSize(info.link)}
                   height={getSize(info.link)}
                 />
-              </a>
+              </Link>
             </div>
           ))}
         </div>
