@@ -13,6 +13,10 @@
   <h3 align="center">A Modern Next.js Portfolio</h3>
 </div>
 
+https://github.com/user-attachments/assets/9c7d83ea-6ee4-4241-9d85-50722c0f0644
+
+<a href="https://mega.nz/file/jgBVlQYR#VPng2cQmrDfHCdDSyc29iNnCn4KNT8Smya0FgwoDQ28" rel="noopener noreferrer" target="_blank">Mobile version</a>
+
 ## 📋 <a name="table">Table of Contents </a>
 
 1. 🤖 [Introduction](#introduction)
@@ -59,20 +63,20 @@ Make sure you have the following installed on your machine:
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
-- [yarn](https://classic.yarnpkg.com/en/docs/getting-started)
+- [yarn](https://classic.yarnpkg.com/en/docs/getting-started) | [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 **Installation**
 
-Install the project dependencies using yarn:
+Install the project dependencies using yarn | npm:
 
 ```bash
-yarn install
+yarn install | npm install
 ```
 
 **Running the Project**
 
 ```bash
-yarn dev
+yarn dev | npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
