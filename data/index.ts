@@ -205,11 +205,11 @@ export const testimonials = [
   },
   {
     quote:
-      "Andre has great web development skills, which together with his soft skills and life experience, could make him delivery oustading IT projects. because of that, I highly recommend him for IT related positions.",
-    name: "João Henrique Cavalcanti",
-    title: "Software Engineer",
-    link: "https://www.linkedin.com/in/joao-henrique-cavalcanti-774b45a4/",
-    img: "/joao-henrique.png",
+      "I had the pleasure of working with André for some time at Critical Techworks, and his dedication to the team and company culture stood out. Beyond being a skilled and eager-to-learn developer, he brought people together by organizing team-building activities and actively engaging in company initiatives. André’s positive energy and collaborative spirit made him a valuable part of the team.",
+    name: "Manuel Pimenta",
+    title: "Product Owner",
+    link: "https://www.linkedin.com/in/manuelpimenta/",
+    img: "/manuel.png",
   },
 ];
 
