@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
+import { motion, stagger, useAnimate, LazyMotion, domAnimation } from "framer-motion";
 import { cn } from "../../lib/utils";
 
 export const TextGenerateEffect = ({
@@ -44,12 +44,14 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
-      <div className="my-4">
-        <div className=" dark:text-white text-black leading-snug tracking-wide">
-          {renderWords()}
+    <LazyMotion features={domAnimation}>
+      <div className={cn("font-bold", className)}>
+        <div className="my-4">
+          <div className=" dark:text-white text-black leading-snug tracking-wide">
+            {renderWords()}
+          </div>
         </div>
       </div>
-    </div>
+    </LazyMotion>
   );
 };

@@ -1,9 +1,14 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { workExperience } from "../data";
 import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
-  const isMobile = window?.innerWidth <= 450;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 450);
+  }, []);
 
   return (
     <div className="py-20 w-full">

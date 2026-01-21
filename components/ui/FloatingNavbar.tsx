@@ -27,15 +27,17 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(true);
   const activeLink = "border-b-purple";
-  const url = window?.location.href;
-  const [active, setActive] = useState<string>(url);
+  const [active, setActive] = useState<string>("");
 
   useEffect(() => {
+    const url = window.location.href;
     const sectionName = url.split("#").pop();
     if (sectionName) {
       setActive(`#${sectionName}`);
+    } else {
+      setActive(url);
     }
-  }, [url]);
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     if (typeof current === "number") {
