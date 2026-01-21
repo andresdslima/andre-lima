@@ -29,6 +29,20 @@ import git from "../public/git.svg";
 import link from "../public/link.svg";
 import file20 from "../public/file-20.png";
 import upArrow from "../public/up-arrow.png";
+import petmatch from "../public/petmatch.png";
+import dealer from "../public/dealer.png";
+import fastfood from "../public/fastfood.png";
+import weather from "../public/weather.png";
+import joaoWind from "../public/joao-wind.png";
+import lucasSoares from "../public/lucas-soares.png";
+import diego from "../public/diego.png";
+import sandor from "../public/sandor.png";
+import manuel from "../public/manuel.png";
+import bmw from "../public/bmw.png";
+import ctw from "../public/ctw.png";
+import otovo from "../public/otovo.png";
+import via from "../public/via.png";
+import ericsson from "../public/ericsson.png";
 
 const JS = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg";
 const ANGULAR = "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg";
@@ -53,8 +67,8 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
-    // img: b1,
+    // img: "/b1.svg",
+    img: b1.src,
     spareImg: "",
   },
   {
@@ -84,10 +98,10 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
-    // img: grid,
-    // spareImg: b4,
+    // img: "/grid.svg",
+    // spareImg: "/b4.svg",
+    img: grid.src,
+    spareImg: b4.src,
   },
   {
     id: 5,
@@ -118,52 +132,42 @@ export const projects = [
     id: 1,
     title: "Pet Match",
     des: "Web app to find the best match for your next beautiful pet. You can choose from different breeds and filter by location.",
-    img: "/petmatch.png",
+    // img: "/petmatch.png",
     iconLists: [
-      "/re.svg",
+      re.src,
       REDUX,
       BOOTSTRAP,
       JS,
       NODE,
     ],
-    // img: p1,
-    // iconLists: [
-    //   "/re.svg",
-    //   REDUX,
-    //   BOOTSTRAP,
-    //   JS,
-    //   NODE,
-    // ],
+    img: petmatch.src,
     link: "https://thepetmatch.vercel.app",
   },
   {
     id: 2,
     title: "Dealer BMW",
     des: "Simple example page for a car dealership. You can click on the car to hear its engine running.",
-    img: "/dealer.png",
-    iconLists: ["/re.svg", JS, SASS],
-    // img: p2,
-    // iconLists: ["/re.svg", JS, SASS],
+    // img: "/dealer.png",
+    iconLists: [re.src, JS, SASS],
+    img: dealer.src,
     link: "https://andresdslima-autoforce.vercel.app",
   },
   {
     id: 3,
     title: "Fastfood",
     des: "Web app to order your favorite fast food. Includes: Order page, Kitchen page (staff only) and Pickup page.",
-    img: "/fastfood.png",
-    iconLists: ["/re.svg", "/ts.svg", SASS],
-    // img: p3,
-    // iconLists: ["/re.svg", "/ts.svg", SASS],
+    // img: "/fastfood.png",
+    iconLists: [re.src, ts.src, SASS],
+    img: fastfood.src,
     link: "https://andresdslima-devio.vercel.app",
   },
   {
     id: 4,
     title: "Weather app",
     des: "Minimalistic weather app displaying the current weather conditions of a given location.",
-    img: "/weather.png",
-    iconLists: [ANGULAR, JS, "/ts.svg", SASS],
-    // img: p4,
-    // iconLists: [ANGULAR, JS, "/ts.svg", SASS],
+    // img: "/weather.png",
+    iconLists: [ANGULAR, JS, ts.src, SASS],
+    img: weather.src,
     link: "https://angular-weather-andresdslima.vercel.app",
   },
 ];
@@ -175,8 +179,8 @@ export const testimonials = [
     name: "João Henrique Wind Santos",
     title: "Software Developer",
     link: "https://www.linkedin.com/in/joaowind/",
-    img: "/joao-wind.png",
-    // img: me,
+    // img: "/joao-wind.png",
+    img: joaoWind.src,
   },
   {
     quote:
@@ -184,7 +188,8 @@ export const testimonials = [
     name: "Lucas Soares",
     title: "AI/ML Software Engineer",
     link: "https://www.linkedin.com/in/lucas-soares-969044167/",
-    img: "/lucas-soares.png",
+    // img: "/lucas-soares.png",
+    img: lucasSoares.src,
   },
   {
     quote:
@@ -192,7 +197,8 @@ export const testimonials = [
     name: "Diego Hartmann",
     title: "Software Engineer",
     link: "https://www.linkedin.com/in/diegohart/",
-    img: "/diego.png",
+    // img: "/diego.png",
+    img: diego.src,
   },
   {
     quote:
@@ -200,7 +206,8 @@ export const testimonials = [
     name: "Sándor Szilágyi",
     title: "Product Development Leader",
     link: "https://www.linkedin.com/in/s%C3%A1ndor-szil%C3%A1gyi-390a493/",
-    img: "/sandor.png",
+    // img: "/sandor.png",
+    img: sandor.src,
   },
   {
     quote:
@@ -208,7 +215,8 @@ export const testimonials = [
     name: "Manuel Pimenta",
     title: "Product Owner",
     link: "https://www.linkedin.com/in/manuelpimenta/",
-    img: "/manuel.png",
+    // img: "/manuel.png",
+    img: manuel.src,
   },
 ];
 
@@ -216,36 +224,36 @@ export const companies = [
   {
     id: 1,
     name: "BMW Group",
-    img: "/bmw.png",
-    // img: cloud,
+    // img: "/bmw.png",
+    img: bmw.src,
     link: "https://www.linkedin.com/company/bmw-group/",
   },
   {
     id: 2,
     name: "Critical Techworks",
-    img: "/ctw.png",
-    // img: app,
+    // img: "/ctw.png",
+    img: ctw.src,
     link: "https://www.linkedin.com/company/criticaltechworks/",
   },
   {
     id: 3,
     name: "Otovo",
-    img: "/otovo.png",
-    // img: s,
+    // img: "/otovo.png",
+    img: otovo.src,
     link: "https://www.linkedin.com/company/otovo/",
   },
   {
     id: 4,
     name: "VIA Consulting",
-    img: "/via.png",
-    // img: dock,
+    // img: "/via.png",
+    img: via.src,
     link: "https://www.linkedin.com/company/via-consulting-s.a./",
   },
   {
     id: 5,
     name: "Ericsson",
-    img: "/ericsson.png",
-    // img: dock,
+    // img: "/ericsson.png",
+    img: ericsson.src,
     link: "https://www.linkedin.com/company/ericsson/",
   },
 ];
@@ -256,58 +264,58 @@ export const workExperience = [
     title: "Fullstack Software Developer @ Critical Techworks - BMW Group",
     desc: "Focused on the MAESTRO Finance platform for BMW Group. Developed, maintained and gave support to the web and server code in different environments (Development, Staging, Production), enabling BMW managers to plan and keep track of all necessary tools (including overall costs) for the production line of new and current projects. Collaborated directly with BMW Team members, handling business knowledge, requirements, and backlogs for our product.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-    // thumbnail: exp1,
+    // thumbnail: "/exp1.svg",
+    thumbnail: exp1.src,
   },
   {
     id: 2,
     title: "Fullstack Software Developer @ Otovo",
     desc: "Worked on the development of a Solar Energy platform/app, where Customers could have a first budget for installing solar panels on their houses. Also, the platform was able to calculate an estimation of how much energy would be produced by these solar panels (according to different specifications and manufacturers).",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
-    // thumbnail: exp2,
+    // thumbnail: "/exp2.svg",
+    thumbnail: exp2.src,
   },
   {
     id: 3,
     title: "Fullstack Software Developer @ VIA Consulting",
     desc: "Worked on the development of a Finance platform/app for a Portuguese bank. The application had the standard features of bank apps, for instance: transaction history, money transfers, payments, etc. We started this application from zero and also worked on the maintenance and support.",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
-    // thumbnail: exp3,
+    // thumbnail: "/exp3.svg",
+    thumbnail: exp3.src,
   },
   {
     id: 4,
     title: "Fullstack Software Developer @ Ericsson",
     desc: "Worked on the development of a Cybersecurity Management Web app for Telecommunication companies. The app basically handled the communication between several devices of a Telecom network, such as: antennas, stores, warehouses, etc. Also, worked on the maintenance and support.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-    // thumbnail: exp4,
+    // thumbnail: "/exp4.svg",
+    thumbnail: exp4.src,
   },
 ];
 
 export const footerButtons = [
   {
     id: 1,
-    img: "/git.svg",
-    // img: git,
+    // img: "/git.svg",
+    img: git.src,
     link: "https://github.com/andresdslima",
   },
   {
     id: 2,
-    img: "/link.svg",
-    // img: link,
+    // img: "/link.svg",
+    img: link.src,
     link: "https://www.linkedin.com/in/andrelimadev",
   },
   {
     id: 3,
-    img: "/file-20.png",
-    // img: file20,
+    // img: "/file-20.png",
+    img: file20.src,
     link: "https://bit.ly/andrelimadev",
   },
   {
     id: 4,
-    img: "/up-arrow.png",
-    // img: upArrow,
+    // img: "/up-arrow.png",
+    img: upArrow.src,
     link: "#home",
   },
 ];
